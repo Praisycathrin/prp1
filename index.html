@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Blog Website</h1>
+    
+    <!-- Create Post Section -->
+    <div class="create-post">
+      <h2>Create New Post</h2>
+      <form id="postForm">
+        <input type="text" id="postTitle" placeholder="Post Title" required />
+        <textarea id="postContent" placeholder="Post Content" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Blog List Section -->
+    <div class="blog-list">
+      <h2>All Posts</h2>
+      <div id="postsContainer">
+        <!-- Posts will be injected here -->
+      </div>
+    </div>
+
+    <!-- Blog Post Section (Hidden initially) -->
+    <div class="blog-post" id="blogPost" style="display: none;">
+      <button id="backBtn">Back to All Posts</button>
+      <h2 id="postTitleDisplay"></h2>
+      <p id="postContentDisplay"></p>
+      <p class="post-date" id="postDateDisplay"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
